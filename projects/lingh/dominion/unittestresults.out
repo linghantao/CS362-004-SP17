@@ -1,0 +1,357 @@
+Result for running unit tests:
+unittest1.c**************************************************
+
+----------TESTING FUNCTION: discardCard()----------
+TEST 1 - Call on hand with one card: PASS
+TEST 2 - Call on front of hand with more than one card: PASS
+TEST 3 - Call on back of hand with more than one card: PASS
+TEST 4 - Consecutively call from first card in hand with four cards: PASS
+TEST 5 - Consecutively call from last card in hand with four cards: PASS
+TEST 6 - Call on an empty hand: FAIL
+TEST 7 - Trashing a card: PASS
+
+File 'dominion.c'
+Lines executed:24.78% of 561
+Branches executed:18.80% of 415
+Taken at least once:17.35% of 415
+Calls executed:15.31% of 98
+Creating 'dominion.c.gcov'
+
+unittest2.c**************************************************
+***.c file was lost but the results of the created executable are provided below***
+
+----------TESTING FUNCTION: fullDeckCount()----------
+Testing on deck only...
+TEST 1 - Call on deck with only one type of card: [32mPASS
+[0mTEST 2 - Call on starting deck estates: [32mPASS
+[0mTEST 3 - Call on starting deck coppers: [32mPASS
+[0mTEST 4 - Call on deck for card not in deck: [32mPASS
+[0mTEST 5 - Call on an empty deck: [32mPASS
+[0mTesting on hand only...
+TEST 6 - Call on hand with only one type of card: [32mPASS
+[0mTEST 7 - Call on hand with two estates: [32mPASS
+[0mTEST 8 - Call on same hand with three coppers: [32mPASS
+[0mTEST 9 - Call on hand for card not in hand: [32mPASS
+[0mTEST 10 - Call on an empty hand: [32mPASS
+[0mTesting on discard only...
+TEST 11 - Call on discard with only one type of card: [32mPASS
+[0mTEST 12 - Call on discard with eight estates: [32mPASS
+[0mTEST 13 - Call on same discard with twelve coppers: [32mPASS
+[0mTEST 14 - Call on discard for card not in discard: [32mPASS
+[0mTEST 15 - Call on an empty discard: [32mPASS
+[0mTesting on deck and hand only...
+TEST 16 - Call on deck and hand with only one type of card: [32mPASS
+[0mTEST 17 - Call on deck and hand with total 3 estates: [32mPASS
+[0mTEST 18 - Call on deck and hand with total 5 coppers: [32mPASS
+[0mTEST 19 - Call on deck and hand with total 7 adventurers: [32mPASS
+[0mTEST 20 - Call on deck and hand for card not in either: [32mPASS
+[0mTEST 21 - Call on empty deck and hand: [32mPASS
+[0mTesting on deck and discard only...
+TEST 22 - Call on deck and discard with only one type of card: [32mPASS
+[0mTEST 23 - Call on deck and discard with total 8 estates: [32mPASS
+[0mTEST 24 - Call on deck and discard with total 10 coppers: [32mPASS
+[0mTEST 25 - Call on deck and discard with total 12 adventurers: [32mPASS
+[0mTEST 26 - Call on deck and discard for card not in either: [32mPASS
+[0mTEST 27 - Call on empty deck and discard: [32mPASS
+[0mTesting on hand and discard only...
+TEST 28 - Call on hand and discard with only one type of card: [32mPASS
+[0mTEST 29 - Call on hand and discard with total 7 estates: [32mPASS
+[0mTEST 30 - Call on hand and discard with total 8 coppers: [32mPASS
+[0mTEST 31 - Call on hand and discard with total 10 adventurers: [32mPASS
+[0mTEST 32 - Call on hand and discard for card not in either: [32mPASS
+[0mTEST 33 - Call on empty hand and discard: [32mPASS
+[0mTesting on hand, deck, and discard...
+TEST 34 - Call on hand, deck, and discard with only one type of card: [32mPASS
+[0mTEST 35 - Call on hand, deck, and discard with total 8 estates: [32mPASS
+[0mTEST 36 - Call on hand, deck, and discard with total 12 coppers: [32mPASS
+[0mTEST 37 - Call on hand, deck, and discard with total 15 adventurers: [32mPASS
+[0mTEST 32 - Call on hand and discard for card not in either: [32mPASS
+[0mTEST 33 - Call on empty hand and discard: [32mPASS
+[0m
+unittest3.c**************************************************
+
+----------TESTING FUNCTION: getCost()----------
+TEST 1 - Call on curse card: PASS
+TEST 2 - Call on estate card: PASS
+TEST 3 - Call on duchy card: PASS
+TEST 4 - Call on province card: PASS
+TEST 5 - Call on copper card: PASS
+TEST 6 - Call on silver card: PASS
+TEST 7 - Call on gold card: PASS
+TEST 8 - Call on adventurer card: PASS
+TEST 9 - Call on council_room card: PASS
+TEST 10 - Call on feast card: PASS
+TEST 11 - Call on gardens card: PASS
+TEST 12 - Call on mine card: PASS
+TEST 13 - Call on remodel card: PASS
+TEST 14 - Call on smithy card: PASS
+TEST 15 - Call on village card: PASS
+TEST 16 - Call on baron card: PASS
+TEST 17 - Call on great_hall card: PASS
+TEST 18 - Call on minion card: PASS
+TEST 19 - Call on steward card: PASS
+TEST 20 - Call on tribute card: PASS
+TEST 21 - Call on ambassador card: PASS
+TEST 22 - Call on cutpurse card: PASS
+TEST 23 - Call on embargo card: PASS
+TEST 24 - Call on outpost card: PASS
+TEST 25 - Call on salvager card: PASS
+TEST 26 - Call on sea_hag card: PASS
+TEST 27 - Call on treasure_map card: PASS
+TEST 28 - Call on invalid card: PASS
+
+File 'dominion.c'
+Lines executed:5.35% of 561
+Branches executed:6.75% of 415
+Taken at least once:6.75% of 415
+Calls executed:0.00% of 98
+Creating 'dominion.c.gcov'
+
+unittest4.c**************************************************
+
+----------TESTING FUNCTION: gainCard()----------
+TEST 1 - Trying to add a card not in the kingdom card set to the hand: PASS
+TEST 2 - Trying to add a card not in the kingdom card set to the deck: PASS
+TEST 3 - Trying to add a card not in the kingdom card set to the discard: PASS
+TEST 4a - Gain an adventurer card to the hand: PASS
+TEST 4b - Lose an adventurer card from the supply pile: PASS
+TEST 5a - Gain a council_room card to the deck: PASS
+TEST 5b - Lose a council_room card from the supply pile: PASS
+TEST 6a - Gain a feast card to the deck: PASS
+TEST 6b - Lose a feast card from the supply pile: PASS
+
+File 'dominion.c'
+Lines executed:8.02% of 561
+Branches executed:8.19% of 415
+Taken at least once:8.19% of 415
+Calls executed:1.02% of 98
+Creating 'dominion.c.gcov'
+
+cardtest1.c**************************************************
+
+----------TESTING FUNCTION: playSmithy()----------
+TEST 1 - Current player receives exactly 3 cards: FAIL
+TEST 2 - Three received cards comes from player's own cards: FAIL
+TEST 3 - No state change occurs for other player: FAIL
+TEST 4 - No state change occurs to the victory and kingdom card piles: PASS
+
+File 'dominion.c'
+Lines executed:13.01% of 561
+Branches executed:10.60% of 415
+Taken at least once:9.64% of 415
+Calls executed:4.08% of 98
+Creating 'dominion.c.gcov'
+
+cardtest2.c**************************************************
+
+----------TESTING FUNCTION: playAdventurer()----------
+TEST 1 - Current player receives exactly 2 treasure cards: PASS
+TEST 2 - The two received cards are treasure card: PASS
+TEST 3 - The deck and/or discard are properly handled: FAIL
+TEST 4 - No state change occurs for other player: PASS
+TEST 5 - No state change occurs to the victory and kingdom card piles: PASS
+TEST 6 - Correct operation when less than two treasures are available: FAIL
+
+File 'dominion.c'
+Lines executed:22.10% of 561
+Branches executed:17.35% of 415
+Taken at least once:15.66% of 415
+Calls executed:9.18% of 98
+Creating 'dominion.c.gcov'
+
+cardtest3.c**************************************************
+
+----------TESTING FUNCTION: playCouncilRoom()----------
+TEST 1 - Current player receives exactly 4 cards: PASS
+TEST 2 - Four received cards come from player's own cards: FAIL
+TEST 3 - No state change occurs for other player's deck and discard: PASS
+TEST 4 - No state change occurs to the victory and kingdom card piles: PASS
+TEST 5 - Other player draws a card: FAIL
+TEST 6 - Current player has an additional buy this turn: FAIL
+
+File 'dominion.c'
+Lines executed:23.53% of 561
+Branches executed:18.80% of 415
+Taken at least once:16.87% of 415
+Calls executed:12.24% of 98
+Creating 'dominion.c.gcov'
+
+cardtest4.c**************************************************
+
+----------TESTING FUNCTION: playVillage()----------
+TEST 1 - Current player receives exactly 1 card: PASS
+TEST 2 - The received card comes from player's own cards: PASS
+TEST 3 - No state change occurs for other player: PASS
+TEST 4 - No state change occurs to the victory and kingdom card piles: PASS
+TEST 5 - The current player receives two additional actions: PASS
+
+File 'dominion.c'
+Lines executed:24.60% of 561
+Branches executed:18.80% of 415
+Taken at least once:16.87% of 415
+Calls executed:15.31% of 98
+Creating 'dominion.c.gcov'
+
+gcov summary**************************************************
+Function 'updateCoins'
+Lines executed:0.00% of 11
+Branches executed:0.00% of 8
+Taken at least once:0.00% of 8
+No calls
+
+Function 'gainCard'
+Lines executed:100.00% of 13
+Branches executed:100.00% of 6
+Taken at least once:100.00% of 6
+Calls executed:100.00% of 1
+
+Function 'discardCard'
+Lines executed:85.71% of 14
+Branches executed:100.00% of 6
+Taken at least once:50.00% of 6
+No calls
+
+Function 'cardEffect'
+Lines executed:0.00% of 192
+Branches executed:0.00% of 167
+Taken at least once:0.00% of 167
+Calls executed:0.00% of 53
+
+Function 'playVillage'
+Lines executed:100.00% of 6
+No branches
+Calls executed:100.00% of 3
+
+Function 'playFeast'
+Lines executed:0.00% of 17
+Branches executed:0.00% of 10
+Taken at least once:0.00% of 10
+Calls executed:0.00% of 6
+
+Function 'playCouncilRoom'
+Lines executed:88.89% of 9
+Branches executed:100.00% of 6
+Taken at least once:83.33% of 6
+Calls executed:75.00% of 4
+
+Function 'playSmithy'
+Lines executed:100.00% of 6
+Branches executed:100.00% of 2
+Taken at least once:100.00% of 2
+Calls executed:100.00% of 3
+
+Function 'playAdventurer'
+Lines executed:83.33% of 18
+Branches executed:100.00% of 12
+Taken at least once:66.67% of 12
+Calls executed:66.67% of 3
+
+Function 'getCost'
+Lines executed:100.00% of 30
+Branches executed:100.00% of 28
+Taken at least once:100.00% of 28
+No calls
+
+Function 'drawCard'
+Lines executed:100.00% of 22
+Branches executed:100.00% of 6
+Taken at least once:100.00% of 6
+Calls executed:100.00% of 1
+
+Function 'getWinners'
+Lines executed:0.00% of 24
+Branches executed:0.00% of 22
+Taken at least once:0.00% of 22
+Calls executed:0.00% of 2
+
+Function 'scoreFor'
+Lines executed:0.00% of 24
+Branches executed:0.00% of 42
+Taken at least once:0.00% of 42
+Calls executed:0.00% of 3
+
+Function 'isGameOver'
+Lines executed:0.00% of 10
+Branches executed:0.00% of 8
+Taken at least once:0.00% of 8
+No calls
+
+Function 'endTurn'
+Lines executed:0.00% of 20
+Branches executed:0.00% of 6
+Taken at least once:0.00% of 6
+Calls executed:0.00% of 3
+
+Function 'whoseTurn'
+Lines executed:100.00% of 2
+No branches
+No calls
+
+Function 'fullDeckCount'
+Lines executed:0.00% of 9
+Branches executed:0.00% of 12
+Taken at least once:0.00% of 12
+No calls
+
+Function 'supplyCount'
+Lines executed:100.00% of 2
+No branches
+No calls
+
+Function 'handCard'
+Lines executed:0.00% of 3
+No branches
+Calls executed:0.00% of 1
+
+Function 'numHandCards'
+Lines executed:0.00% of 2
+No branches
+Calls executed:0.00% of 1
+
+Function 'buyCard'
+Lines executed:0.00% of 13
+Branches executed:0.00% of 6
+Taken at least once:0.00% of 6
+Calls executed:0.00% of 4
+
+Function 'playCard'
+Lines executed:0.00% of 14
+Branches executed:0.00% of 10
+Taken at least once:0.00% of 10
+Calls executed:0.00% of 3
+
+Function 'shuffle'
+Lines executed:100.00% of 16
+Branches executed:100.00% of 8
+Taken at least once:100.00% of 8
+Calls executed:100.00% of 2
+
+Function 'initializeGame'
+Lines executed:0.00% of 62
+Branches executed:0.00% of 46
+Taken at least once:0.00% of 46
+Calls executed:0.00% of 5
+
+Function 'kingdomCards'
+Lines executed:0.00% of 13
+No branches
+No calls
+
+Function 'newGame'
+Lines executed:0.00% of 3
+No branches
+No calls
+
+Function 'compare'
+Lines executed:100.00% of 6
+Branches executed:100.00% of 4
+Taken at least once:100.00% of 4
+No calls
+
+File 'dominion.c'
+Lines executed:24.60% of 561
+Branches executed:18.80% of 415
+Taken at least once:16.87% of 415
+Calls executed:15.31% of 98
+Creating 'dominion.c.gcov'
+

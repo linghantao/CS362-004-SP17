@@ -1282,6 +1282,7 @@ int discardCard(int handPos, int currentPlayer, struct gameState *state, int tra
       //reduce number of cards in hand
       state->handCount[currentPlayer]--;
     }
+  state->discardCount[currentPlayer]++;
 	
   return 0;
 }
