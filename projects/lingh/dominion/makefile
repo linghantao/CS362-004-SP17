@@ -18,5 +18,14 @@ randomtestadventurer: randomtestadventurer.c dominion.o rngs.o assertTrue.o rand
 randomtestcard1: randomtestcard1.c dominion.o rngs.o assertTrue.o randomGameState.o
 	gcc -o randomtestcard1 -g randomtestcard1.c dominion.o rngs.o assertTrue.o randomGameState.o $(CFLAGS)
 
-clean:
+randomtestcard2: randomtestcard2.c dominion.o rngs.o assertTrue.o randomGameState.o
+	gcc -o randomtestcard2 -g randomtestcard2.c dominion.o rngs.o assertTrue.o randomGameState.o $(CFLAGS)
+
+testresults.out: randomtestcard1.c randomtestcard2.c randomtestadventurer.c dominion.c rngs.c assertTrue.c randomGameState.c
+	echo "Testing playSmithy() [randomtestcard1.c]**************************************************" >> randomtestcard1.out
+	gcc -o randomtestcard1 -g randomtestcard1.c dominion.o rngs.o assertTrue.o randomGameState.o $(CFLAGS)
+	./randomtestcard1 >> randomtestcard1.out
+	gcov -b dominion.c >> randomtestcard1.out
+
+cleanresults:
 	rm -f *.exe *gcda *.gcov *.o *.gcno *.so
