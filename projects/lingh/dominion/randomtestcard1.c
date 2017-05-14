@@ -20,12 +20,11 @@ void randomTestSmithy(int numTests) {
     int test1 = 0;
     int test2 = 0;
     int test3 = 0;
-    int test4 = 0;
 
     printf("\n----------RANDOM TESTING playSmithy()----------\n");
 
     for (i = 0; i < numTests; i++) {
-        randomGameState(&state, 1, 1);
+        randomGameState(&state, 1, 0);
         tempHandSize = state.handCount[0];
         tempDeckSize = state.deckCount[0];
         tempDiscardSize = state.discardCount[0];
@@ -66,7 +65,6 @@ void randomTestSmithy(int numTests) {
     printf("TEST 1 passed %d out of %d iterations.\n", test1, numTests);
     printf("TEST 2 passed %d out of %d iterations.\n", test2, numTests);
     printf("TEST 3 passed %d out of %d iterations.\n", test3, numTests);
-    //printf("TEST 4 passed %d out of %d iterations.\n", test4, numTests);
     printf("\n");
 
     return;

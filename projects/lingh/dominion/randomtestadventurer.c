@@ -6,22 +6,21 @@
 #include <stdlib.h>
 #include <time.h>
 
-void randomTestAdventurer();
+void randomTestAdventurer(int numTests);
 
 int main (int argc, char *argv[]) {
     srand(time(NULL));
-    randomTestAdventurer(); 
+    randomTestAdventurer(1000); 
     return 0;
 }
 
-void randomTestAdventurer() {
+void randomTestAdventurer(int numTests) {
     struct gameState state;
-    int i, j, numTests, tempHandSize, tempDeckSize, tempDiscardSize, treasureCheck, handResult, deckResult, discardResult, tempHandSize2, tempDeckSize2, tempDiscardSize2;
+    int i, j, tempHandSize, tempDeckSize, tempDiscardSize, treasureCheck, handResult, deckResult, discardResult, tempHandSize2, tempDeckSize2, tempDiscardSize2;
     int test1 = 0;
     int test2 = 0;
     int test3 = 0;
     int test4 = 0;
-    numTests = 1000;
 
     printf("\n----------RANDOM TESTING playAdventurer()----------\n");
 
