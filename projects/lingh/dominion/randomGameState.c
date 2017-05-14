@@ -78,8 +78,8 @@ void randomGameState(struct gameState *state, int playerFlag, int supplyFlag) {
     state->numPlayers = numberPlayers;
 
     //Initialize turn
-    //state->outpostPlayed = 0;
-    //state->phase = 0;
+    state->outpostPlayed = 0;
+    state->phase = 0;
     state->numActions = 1;
     state->numBuys = 1;
     state->playedCardCount = 0;

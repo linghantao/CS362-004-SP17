@@ -14,3 +14,9 @@ randomGameState.o: randomGameState.h randomGameState.c
 
 randomtestadventurer: randomtestadventurer.c dominion.o rngs.o assertTrue.o randomGameState.o
 	gcc -o randomtestadventurer -g randomtestadventurer.c dominion.o rngs.o assertTrue.o randomGameState.o $(CFLAGS)
+
+randomtestcard1: randomtestcard1.c dominion.o rngs.o assertTrue.o randomGameState.o
+	gcc -o randomtestcard1 -g randomtestcard1.c dominion.o rngs.o assertTrue.o randomGameState.o $(CFLAGS)
+
+clean:
+	rm -f *.exe *gcda *.gcov *.o *.gcno *.so
