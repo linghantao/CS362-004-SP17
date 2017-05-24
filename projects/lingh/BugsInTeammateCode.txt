@@ -1,0 +1,11 @@
+BugsInTeammatesCode.txt
+
+Bug-Reports
+-------------------------
+Bug 1: The p_smithy() function improperly handles the discard that should happen when the card is played.
+
+After running my unit test on the function, I saw that a couple of my tests failed dealing with the size of the player’s hand after playing smithy. From this, I checked the function code and saw that the function was not discarding a card from the player’s hand like it should.
+--------------------------
+Bug 2: The p_adventure() function improperly deals with the case when the player goes through their deck without drawing two treasure cards.
+
+I found this bug after running my unit test for the p_adventure() function. One test that failed in the unit test was “Correct operation when less than two treasures are available”. This led me to check the function code, where I saw that the lines of code that were supposed to shuffle the deck and discard was commented out. 
